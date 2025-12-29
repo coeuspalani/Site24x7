@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>YAMLCon</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/terminal.css') }}">
+</head>
+<body>
+
+<div class="app">
+
+    <div class="terminal">
+        <div class="terminal-header">yamlcon — guided terminal</div>
+
+        <div class="command-block">
+            <div class="cmd-line">$ yamlcon \</div>
+
+            <div class="cmd-row">
+                <span>--path</span>
+                <input id="path" value="/admin/monitors">
+            </div>
+
+            <div class="cmd-row">
+                <span>--method</span>
+                <input id="method" value="get">
+            </div>
+
+            <div class="cmd-row">
+                <span>--tag</span>
+                <input id="tag" value="Admin Monitors">
+            </div>
+
+            <div class="cmd-row">
+                <span>--summary</span>
+                <input id="summary" value="Get Admin Monitors">
+            </div>
+
+            <div class="cmd-row">
+                <span>--operation-id</span>
+                <input id="operation_id" value="getAdminMonitors">
+            </div>
+
+            <div class="cmd-row">
+                <span>--root-template</span>
+                <input id="root_template" value="admin_monitors_get">
+            </div>
+
+            <div class="cmd-row">
+                <span>--xml-file</span>
+                <input id="xml_file" value="security.xml">
+            </div>
+
+            <div class="cmd-row">
+                <span>--output</span>
+                <input id="output" value="api.yaml">
+            </div>
+
+            <button id="runBtn">▶ Run</button>
+        </div>
+
+        <div class="terminal-log" id="terminalLog"></div>
+    </div>
+
+    <div class="side-panel">
+        <div class="side-header">Available APIs</div>
+        <input
+          type="text"
+          id="apiSearch"
+          placeholder="Search APIs (method or path)"
+        />
+
+        <ul id="apiList"></ul>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal-overlay" id="modal">
+    <div class="modal">
+        <div class="modal-header">
+            Sample Response
+            <button onclick="closeModal()">✕</button>
+        </div>
+        <pre id="modalContent"></pre>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='js/terminal.js') }}"> </script>
+</body>
+</html>

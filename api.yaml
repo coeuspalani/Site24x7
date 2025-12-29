@@ -1,0 +1,2363 @@
+paths:
+  /thresold_profile/d:
+    get:
+      tags:
+      - Admin Monitors
+      summary: Get Admin Monitors
+      operationId: getAdminMonitors
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  cluster_input_traffic:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  five_seconds_long_transactions:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_com_select:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_com_delete_multi:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_cluster_shards_active_percent:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_iops_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_jvm_gc_collection_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  swell_time:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cpu_total:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_fs_io_total_read_bytes:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  type:
+                    type: string
+                    maxLength: 255
+                  pg_active_connections:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  oracle_pls_data_size_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_slow_queries_ps:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_search_scroll_current_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_disk_utilization:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_pls_data_size:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_data_iops:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_mem_hit_ratio:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_active_sessions:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_requestcache_miss_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  rollback_ratio:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  website_content_modified:
+                    type: boolean
+                  capacity_resource:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+                  pg_one_second_transactions:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_pls_iops_read:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_cluster_shards_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  oracle_pls_blk_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_db_age:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pls_throughput_read:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  response_time_threshold_exceeds:
+                    type: string
+                    maxLength: 255
+                  opensearch_process_mem_total_virtual_bytes:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_five_seconds_long_transactions:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  active_connections:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_requestcache_hit_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_imci_tmpfileusedsize:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_indexing_is_throttled_bool:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_com_replace:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_prepared_stmt_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  profile_id:
+                    type: integer
+                    format: int64
+                  opensearch_jvm_mem_heap_used_percent:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_indexing_index_failed_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_conn_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  read_time_out:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+                  blks_read_delta:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_cluster_task_max_waiting_time_seconds:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_cpu_total:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_three_seconds_transactions:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  response_time_threshold:
+                    type: object
+                    properties:
+                      secondary:
+                        type: object
+                        properties:
+                          comparison_operator:
+                            type: integer
+                            format: int64
+                          trouble:
+                            type: integer
+                            format: int64
+                          strategy:
+                            type: integer
+                            format: int64
+                          polls_check:
+                            type: integer
+                            format: int64
+                      primary:
+                        type: object
+                        properties:
+                          comparison_operator:
+                            type: integer
+                            format: int64
+                          trouble:
+                            type: integer
+                            format: int64
+                          strategy:
+                            type: integer
+                            format: int64
+                          polls_check:
+                            type: integer
+                            format: int64
+                  cluster_tps:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_process_file_descriptors_open_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_fs_io_total_write_operations:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  conn_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_transport_tx_bytes_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_transport_rx_bytes_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_data_io:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_innodb_buffer_dirty_ratio:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  no_of_triuble_subgroup:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: integer
+                        format: int64
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_imci_stmtsexepersec:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_pls_iops_write:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_com_insert_select:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_imci_datasize:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_rollback_ratio:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_refresh_total_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  five_seconds_executing_sqls:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_fs_path_total_bytes:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  healthcheckConfiguration:
+                    type: string
+                    maxLength: 255
+                  status_unconfirmed:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+                  pls_pg_wal_dir_size:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_store_size_bytes:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_five_seconds_executing_sqls:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  no_of_critical_subgroup:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: integer
+                        format: int64
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_pls_throughput_write:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_com_update:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_querycache_hit_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  mem_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_process_cpu_percent:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_direntry_utilization:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_pls_iops:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_imci_stmtsinqueue:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  tps:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_com_update_multi:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_search_fetch_current_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_fs_io_total_write_bytes:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pls_iops_read:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_threadpool_tasks_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_one_second_executing_sqls:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_transport_server_open_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_pls_throughput_read:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_iops:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_three_seconds_executing_sqls:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pls_iops_write:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_indexing_delete_current_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_innodb_buffer_read_hit_rate:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  db_age:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pls_blk_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_http_open_server_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  one_second_transactions:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_fielddata_evictions_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  capacity_mute_alert:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+                  opensearch_indices_requestcache_memory_size_bytes:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  profile_name:
+                    type: string
+                    maxLength: 255
+                  cluster_mps:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_qps:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_mdl_lock_session:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pls_data_size_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_search_query_current_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_pls_pg_wal_dir_size:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  oracle_idle_connections:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  connections:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_threadpool_threads_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_blktag_utilization:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_pls_throughput:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_other_lock_session:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_cluster_pending_tasks_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_replica_lag:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  oracle_pls_inode_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pg_mem_usage:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_com_replace_select:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_cpu_utilization:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_cluster_nodes_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  account_disabled:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+                  cluster_pcu_by_cpu_cores:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_querycache_cache_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_flush_total_time_seconds:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pls_data_size:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_flush_total_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_cluster_inflight_fetch_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  down_location_threshold:
+                    type: integer
+                    format: int64
+                  pg_blks_read_delta:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_querycache_evictions_count:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_connection_utilization:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  pls_iops:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  no_of_critical:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: integer
+                        format: int64
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  no_of_trouble:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: integer
+                        format: int64
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_redo_write_rate:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_doc_deleted_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  capacity_mute_alert_subgroup:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+                  cluster_com_delete:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  cluster_inode_utilization:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  one_second_executing_sqls:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_doc_number:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  opensearch_indices_indexing_index_time_seconds:
+                    type: object
+                    properties:
+                      comparison_operator:
+                        type: integer
+                        format: int64
+                      trouble:
+                        type: string
+                        maxLength: 255
+                      strategy:
+                        type: integer
+                        format: int64
+                      polls_check:
+                        type: integer
+                        format: int64
+                  subtype:
+                    type: string
+                    maxLength: 255
+                  email_not_verified:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+                  profile_type:
+                    type: integer
+                    format: int64
+                  threshold_count_change:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+                  is_metrics_captured:
+                    type: object
+                    properties:
+                      severity:
+                        type: integer
+                        format: int64
+                      value:
+                        type: boolean
+  /admin/monitors:
+    get:
+      tags:
+      - Admin Monitors
+      summary: Get Admin Monitors
+      operationId: getAdminMonitors
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  last_updated:
+                    type: string
+                    maxLength: 255
+                  monitor_id:
+                    type: integer
+                    format: int64
+                  check_frequency:
+                    type: string
+                    maxLength: 255
+                  threshold_profile_id:
+                    type: integer
+                    format: int64
+                  display_name:
+                    type: string
+                    maxLength: 255
+                  type:
+                    type: string
+                    maxLength: 255
+                  secondary_protocol_severity:
+                    type: string
+                    maxLength: 255
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                    minItems: 0
+                    maxItems: 2000
+                  monitor_groups:
+                    type: array
+                    items:
+                      type: integer
+                      format: int64
+                    minItems: 0
+                    maxItems: 2000
+                  state:
+                    type: integer
+                    format: int64
+                  monitor_groups_name:
+                    type: string
+                    maxLength: 255
+                  notification_profile_id:
+                    type: integer
+                    format: int64
+                  location_profile_id:
+                    type: integer
+                    format: int64
+  /acs/notifications:
+    get:
+      tags:
+      - ACS Notifications
+      summary: Get ACS Notifications
+      operationId: getACSNotification
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  zaaid:
+                    type: string
+                    maxLength: 255
+                  iso_timestamp:
+                    type: string
+                    maxLength: 255
+                  lastdowntime:
+                    type: integer
+                    format: int64
+                  encode_zaaid:
+                    type: string
+                    maxLength: 255
+                  mid:
+                    type: integer
+                    format: int64
+                  state:
+                    type: integer
+                    format: int64
+                  customer_name:
+                    type: string
+                    maxLength: 255
+                  message:
+                    type: string
+                    maxLength: 255
+                  timestamp:
+                    type: integer
+                    format: int64
+                  status:
+                    type: boolean
+                  monitor_name:
+                    type: string
+                    maxLength: 255
+  /monitors:
+    get:
+      tags:
+      - Get Monitors
+      summary: Get Available Monitors
+      operationId: getMonitors
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  http_protocol:
+                    type: string
+                    maxLength: 255
+                  use_ipv6:
+                    type: boolean
+                  browser_type:
+                    type: integer
+                    format: int64
+                  check_type:
+                    type: string
+                    maxLength: 255
+                  type:
+                    type: string
+                    maxLength: 255
+                  user_group_ids:
+                    type: array
+                    items:
+                      type: integer
+                      format: int64
+                    minItems: 0
+                    maxItems: 2000
+                  uuid:
+                    type: string
+                    maxLength: 255
+                  monitor_groups:
+                    type: array
+                    items:
+                      type: integer
+                      format: int64
+                    minItems: 0
+                    maxItems: 2000
+                  protocol:
+                    type: integer
+                    format: int64
+                  domain_name:
+                    type: string
+                    maxLength: 255
+                  http_method:
+                    type: string
+                    maxLength: 255
+                  follow_redirect:
+                    type: boolean
+                  state:
+                    type: integer
+                    format: int64
+                  notification_profile_id:
+                    type: integer
+                    format: int64
+                  vm_name:
+                    type: string
+                    maxLength: 255
+                  ssl_protocol:
+                    type: string
+                    maxLength: 255
+                  created_time:
+                    type: string
+                    maxLength: 255
+                  tag_ids:
+                    type: array
+                    items:
+                      type: integer
+                      format: int64
+                    minItems: 0
+                    maxItems: 2000
+                  display_name:
+                    type: string
+                    maxLength: 255
+                  ip_type:
+                    type: integer
+                    format: int64
+                  unique_name:
+                    type: string
+                    maxLength: 255
+                  auth_method:
+                    type: string
+                    maxLength: 255
+                  last_updated_time:
+                    type: string
+                    maxLength: 255
+                  use_name_server:
+                    type: boolean
+                  port:
+                    type: integer
+                    format: int64
+                  os_type:
+                    type: string
+                    maxLength: 255
+                  use_alpn:
+                    type: boolean
+                  lookup_type:
+                    type: integer
+                    format: int64
+                  custom_headers:
+                    type: array
+                    items:
+                      type: object
+                      properties:
+                        name:
+                          type: string
+                          maxLength: 255
+                        value:
+                          type: string
+                          maxLength: 255
+                    minItems: 0
+                    maxItems: 2000
+                  device_template:
+                    type: string
+                    maxLength: 255
+                  monitor_id:
+                    type: integer
+                    format: int64
+                  timeout:
+                    type: integer
+                    format: int64
+                  match_case:
+                    type: boolean
+                  ignore_cert_err:
+                    type: boolean
+                  subtype:
+                    type: string
+                    maxLength: 255
+                  vendor:
+                    type: string
+                    maxLength: 255
+                  dns_port:
+                    type: string
+                    maxLength: 255
+                  is_server_integrated:
+                    type: boolean
+                  dimension:
+                    type: integer
+                    format: int64
+                  dnssec:
+                    type: boolean
+                  website:
+                    type: string
+                    maxLength: 255
+                  check_frequency:
+                    type: integer
+                    format: int64
+                  threshold_profile_id:
+                    type: integer
+                    format: int64
+                  ip_address:
+                    type: string
+                    maxLength: 255
+                  perform_automation:
+                    type: boolean
+                  dns_host:
+                    type: string
+                    maxLength: 255
+                  probe_proxy_enabled:
+                    type: boolean
+                  website_type:
+                    type: integer
+                    format: int64
+                  location_profile_id:
+                    type: integer
+                    format: int64
+                  host_name:
+                    type: string
+                    maxLength: 255

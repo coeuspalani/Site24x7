@@ -1,0 +1,278 @@
+* {
+    box-sizing: border-box;
+    font-family: Consolas, monospace;
+}
+
+body {
+    margin: 0;
+    background: #0d1117;
+    color: #c9d1d9;
+}
+
+.app {
+    display: flex;
+    height: 100vh;
+}
+
+.terminal {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid #21262d;
+}
+
+.terminal-header {
+    padding: 10px;
+    background: #161b22;
+    font-weight: bold;
+}
+
+.command-block {
+    padding: 15px;
+}
+
+.cmd-line {
+    margin-bottom: 10px;
+    color: #58a6ff;
+}
+
+.cmd-row {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 8px;
+}
+
+.cmd-row span {
+    width: 140px;
+    color: #7d8590;
+}
+
+.cmd-row input {
+    flex: 1;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    color: #c9d1d9;
+    padding: 4px 6px;
+}
+
+.cmd-row input:focus {
+    outline: none;
+    border-color: #58a6ff;
+}
+
+button {
+    margin-top: 10px;
+    padding: 8px 12px;
+    background: #238636;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #2ea043;
+}
+
+.terminal-log {
+    padding: 10px 15px;
+    border-top: 1px solid #21262d;
+    color: #7ee787;
+    min-height: 50px;
+}
+
+.side-panel {
+    width: 320px;
+    background: #161b22;
+}
+
+.side-header {
+    padding: 10px;
+    border-bottom: 1px solid #21262d;
+}
+
+#apiList {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#apiList li {
+    padding: 10px;
+    cursor: pointer;
+    border-bottom: 1px solid #21262d;
+}
+
+#apiList li:hover {
+    background: #1f2933;
+}
+
+.modal-overlay {
+    position: fixed;
+    inset: 0;
+    background: rgba(0,0,0,0.65);
+    backdrop-filter: blur(8px);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal {
+    width: 80%;
+    max-width: 900px;
+    background: #0d1117;
+    border: 1px solid #30363d;
+    border-radius: 6px;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background: #161b22;
+}
+
+.modal pre {
+    padding: 15px;
+    max-height: 70vh;
+    overflow: auto;
+    white-space: pre-wrap;  
+    word-break: break-word;
+    color: #c9d1d9;
+}
+.modal pre {
+    white-space: pre-wrap;   
+    word-break: break-word;
+    overflow-y: auto;
+    font-family: Consolas, monospace;
+}
+.path-item {
+  max-width: 100%;
+  overflow-wrap: anywhere;   
+  word-break: break-word;    
+}
+.path-item {
+  min-width: 0;              
+  overflow-wrap: anywhere;
+}
+.side-panel {
+  width: 360px;             
+  overflow-x: hidden;        
+}
+.side-panel {
+  width: 360px;              
+  overflow-x: hidden; 
+}       
+#apiList li {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+
+  transition: background 0.2s ease;
+}
+
+#apiList li:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.api-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.api-method {
+  font-weight: 600;
+  color: #4fd1c5;
+  flex-shrink: 0;
+}
+
+.api-path {
+  flex: 1;
+  min-width: 0;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  overflow: hidden;
+  word-break: break-word;
+  overflow-wrap: anywhere;
+
+  transition: -webkit-line-clamp 0.25s ease;
+}
+
+.side-panel {
+  overflow-x: hidden;
+}
+
+#apiList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#apiList li {
+  padding: 10px 12px;
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#apiList li:hover {
+  background: rgba(255,255,255,0.05);
+}
+
+.api-row {
+  display: flex;
+  gap: 10px;
+  align-items: flex-start;
+  min-width: 0; 
+}
+
+.api-method {
+  font-weight: 600;
+  color: #4fd1c5;
+  flex-shrink: 0;
+}
+
+.api-path {
+  flex: 1;
+  min-width: 0;
+
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 1;
+
+  overflow: hidden;
+  overflow-wrap: anywhere;
+  word-break: break-word;
+
+  transition: all 0.25s ease;
+}
+
+.api-path.expanded {
+  -webkit-line-clamp: unset;
+}
+#apiSearch {
+  width: calc(100% - 24px);
+  margin: 10px 12px;
+  padding: 8px 10px;
+
+  background: #0f172a;
+  color: #e5e7eb;
+
+  border: 1px solid rgba(255,255,255,0.12);
+  border-radius: 6px;
+
+  outline: none;
+  font-size: 14px;
+}
+
+#apiSearch::placeholder {
+  color: #94a3b8;
+}
+
+#apiSearch:focus {
+  border-color: #4fd1c5;
+}

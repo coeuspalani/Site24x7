@@ -1,0 +1,138 @@
+paths:
+  /api/monitors:
+    get:
+      tags:
+        - Monitors
+      summary: List all monitors
+      operationId: listMonitors
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  code:
+                    type: integer
+                  message:
+                    type: string
+                  data:
+                    type: array
+                    items:
+                      additionalProperties: true
+                      type: object
+                      properties:
+                        monitor_id:
+                          type: string
+                          description: Unique identifier for the monitor
+                        display_name:
+                          type: string
+                          description: Display name of the monitor
+                        type:
+                          type: string
+                          description: 'Type of the monitor (e.g., SERVER_CONTAINER, SERVER, URL, PLUGIN, etc.)'
+                        state:
+                          type: integer
+                          description: 'Current state of the monitor (e.g., 0=up, 5=down)'
+                        last_updated_time:
+                          type: string
+                          format: date-time
+                          description: Last update timestamp of the monitor
+                        notification_profile_id:
+                          type: string
+                          description: Notification profile associated with the monitor
+                        user_group_ids:
+                          type: array
+                          items:
+                            type: string
+                          description: List of user group IDs associated with the monitor
+                        threshold_profile_id:
+                          type: string
+                          description: Threshold profile ID for alerts
+                        image:
+                          type: string
+                          description: Docker image name (for container monitors)
+                        name:
+                          type: string
+                          description: Name of the container or server
+                        docker_id:
+                          type: string
+                          description: Docker identifier (for container monitors)
+                        docker_skip_alert:
+                          type: boolean
+                          description: Flag to skip docker alerts
+                        hostname:
+                          type: string
+                          description: Hostname of the server (for SERVER type)
+                        ipaddress:
+                          type: string
+                          description: IP address of the server (for SERVER type)
+                        server_type:
+                          type: string
+                          description: 'Server OS type (e.g., LINUX)'
+                        website:
+                          type: string
+                          format: uri
+                          description: Website URL (for URL or HOMEPAGE monitors)
+                        check_frequency:
+                          type: string
+                          description: Frequency of checks in minutes
+                        timeout:
+                          type: integer
+                          description: Timeout in seconds
+                        plugin_name:
+                          type: string
+                          description: Plugin script name (for PLUGIN type)
+                        created_time:
+                          type: string
+                          description: Creation time as timestamp or date-time string
+                      required:
+                        - monitor_id
+                        - display_name
+                        - type
+                        - state
+                        - last_updated_time
+                        - notification_profile_id
+                        - user_group_ids
+                        - threshold_profile_id
+                required:
+                  - code
+                  - message
+                  - data
+        '400':
+          description: Bad Request
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code:
+                    type: integer
+                  message:
+                    type: string
+                required:
+                  - error_code
+                  - message
+        '401':
+          description: Unauthorized
+          content:
+            application/json:
+              schema:
+                type: object
+                properties:
+                  error_code:
+                    type: integer
+                  message:
+                    type: string
+                required:
+                  - error_code
+                  - message
+
+
+
+
+
+
+
+
